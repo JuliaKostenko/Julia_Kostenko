@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .general{
+            background-color: #eeeeee;
+        }
+        .left{
+            background-color: #cccccc;
+            width: 15em;
+            float: left;
+        }
+        .right{
+            margin-left: 15em;
+        }
+        div p img{
+            float: right;
+        }
+        .right div{
+            background-color: #aaa;
+            margin-bottom: 5px;
+        }
+        .clear{
+            height: 5px;
+            background-color: #eeeeee;
+            clear: both;
+        }
+        .footer{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="general">
+    <div class="left">
+        <h2>Блок навигации</h2>
+        <ul>
+            <li>Ширина 15еm</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по
+            высоте он начинал захватывать вторую статью, как показано
+            в данном примере</li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="article1">
+            <h2>Статья 1</h2>
+            <p>Размер блока:</p>
+            <p>Занимает всю доступную ширину</p>
+            <p>Должен присутствовать цвет фона</p>
+            <p>Во всех статьях сделайте отступ снизу от соседей равным
+            .2em, при помощи свойства margin-bottom</p>
+        </div>
+        <div class="article2">
+            <h2>Статья 2</h2>
+            <p>Размер блока:</p>
+            <p>Занимает всю доступную ширину</p>
+            <p>Должен присутствовать цвет фона</p>
+            <p>Во всех статьях сделайте отступ снизу от соседей равным
+                .2em, при помощи свойства margin-bottom. Картинка вставлена
+            при помощи тега, плавание организовано по правому краю внутри
+            данной статьи для этой картинки.</p>
+            <img src="mail.png" alt="mail">
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота
+        определяется помещённым внутрь контейнером.</p>
+    </div>
+</div>
+</body>
+</html>
